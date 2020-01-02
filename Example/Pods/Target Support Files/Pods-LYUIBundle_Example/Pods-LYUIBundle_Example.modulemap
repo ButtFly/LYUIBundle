@@ -1,0 +1,6 @@
+module Pods_LYUIBundle_Example {
+  umbrella header "Pods-LYUIBundle_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

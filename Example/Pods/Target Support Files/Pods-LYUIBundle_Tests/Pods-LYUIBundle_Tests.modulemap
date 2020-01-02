@@ -1,0 +1,6 @@
+module Pods_LYUIBundle_Tests {
+  umbrella header "Pods-LYUIBundle_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

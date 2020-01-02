@@ -1,0 +1,6 @@
+module LYUIBundle {
+  umbrella header "LYUIBundle-umbrella.h"
+
+  export *
+  module * { export * }
+}

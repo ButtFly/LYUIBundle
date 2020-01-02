@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43B6B821640096FE4C248F66 /* Pods_LYUIBundle_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35C571B475957ACB7C06921 /* Pods_LYUIBundle_Example.framework */; };
+		2552FCB21A16B85E4BBC2929 /* libPods-LYUIBundle_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21CC37422D532EF0A3525DA /* libPods-LYUIBundle_Example.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B556EE7330237493F9A88F7D /* Pods_LYUIBundle_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593949ED878898156643BE9B /* Pods_LYUIBundle_Tests.framework */; };
+		FA7E51BF476969E89ABA2E1F /* libPods-LYUIBundle_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C80264BC69A980811611E98 /* libPods-LYUIBundle_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		515861DC7D49B00379FA5EC6 /* LYUIBundle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LYUIBundle.podspec; path = ../LYUIBundle.podspec; sourceTree = "<group>"; };
-		593949ED878898156643BE9B /* Pods_LYUIBundle_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYUIBundle_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		515861DC7D49B00379FA5EC6 /* LYUIBundle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYUIBundle.podspec; path = ../LYUIBundle.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* LYUIBundle_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYUIBundle_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +40,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7AFB9A0292EA43133EEFED97 /* Pods-LYUIBundle_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYUIBundle_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LYUIBundle_Tests/Pods-LYUIBundle_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7E69B1FEBEA7486855EB77FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7E69B1FEBEA7486855EB77FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8C80264BC69A980811611E98 /* libPods-LYUIBundle_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYUIBundle_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A783033B78DB82FBE091086D /* Pods-LYUIBundle_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYUIBundle_Example.debug.xcconfig"; path = "Target Support Files/Pods-LYUIBundle_Example/Pods-LYUIBundle_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AAB864B7CA2A598D5C6D3408 /* Pods-LYUIBundle_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYUIBundle_Example.release.xcconfig"; path = "Target Support Files/Pods-LYUIBundle_Example/Pods-LYUIBundle_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C21CC37422D532EF0A3525DA /* libPods-LYUIBundle_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYUIBundle_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBB39AACDE55EAB230E67F8 /* Pods-LYUIBundle_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYUIBundle_Tests.release.xcconfig"; path = "Target Support Files/Pods-LYUIBundle_Tests/Pods-LYUIBundle_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F0558C283CD68ACB2A2D6F30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F35C571B475957ACB7C06921 /* Pods_LYUIBundle_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYUIBundle_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0558C283CD68ACB2A2D6F30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43B6B821640096FE4C248F66 /* Pods_LYUIBundle_Example.framework in Frameworks */,
+				2552FCB21A16B85E4BBC2929 /* libPods-LYUIBundle_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B556EE7330237493F9A88F7D /* Pods_LYUIBundle_Tests.framework in Frameworks */,
+				FA7E51BF476969E89ABA2E1F /* libPods-LYUIBundle_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +142,8 @@
 		630967D1E2D242148D12E1A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F35C571B475957ACB7C06921 /* Pods_LYUIBundle_Example.framework */,
-				593949ED878898156643BE9B /* Pods_LYUIBundle_Tests.framework */,
+				C21CC37422D532EF0A3525DA /* libPods-LYUIBundle_Example.a */,
+				8C80264BC69A980811611E98 /* libPods-LYUIBundle_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,7 +156,6 @@
 				7AFB9A0292EA43133EEFED97 /* Pods-LYUIBundle_Tests.debug.xcconfig */,
 				EBBB39AACDE55EAB230E67F8 /* Pods-LYUIBundle_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +170,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				08E43ADDE64001729EE7507E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,7 +188,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				9F1C5E0FAF4DCE2931CA0AB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,10 +211,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = K64377832H;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = K64377832H;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -263,24 +263,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08E43ADDE64001729EE7507E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LYUIBundle_Example/Pods-LYUIBundle_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LYUIBundle/LYUIBundle.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYUIBundle.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYUIBundle_Example/Pods-LYUIBundle_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		86EE7F5F4341CF76EF4BDC5A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,24 +283,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F1C5E0FAF4DCE2931CA0AB8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LYUIBundle_Tests/Pods-LYUIBundle_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYUIBundle_Tests/Pods-LYUIBundle_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A726385351129AE9D44EC13E /* [CP] Check Pods Manifest.lock */ = {
@@ -497,6 +461,7 @@
 			baseConfigurationReference = A783033B78DB82FBE091086D /* Pods-LYUIBundle_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K64377832H;
 				INFOPLIST_FILE = LYUIBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -512,6 +477,7 @@
 			baseConfigurationReference = AAB864B7CA2A598D5C6D3408 /* Pods-LYUIBundle_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K64377832H;
 				INFOPLIST_FILE = LYUIBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -526,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFB9A0292EA43133EEFED97 /* Pods-LYUIBundle_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = K64377832H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -548,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBBB39AACDE55EAB230E67F8 /* Pods-LYUIBundle_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = K64377832H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,4 +1,9 @@
-use_frameworks!
+# 使用清华大学的源进行cocoapods
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+use_modular_headers!
 
 target 'LYUIBundle_Example' do
   pod 'LYUIBundle', :path => '../'
