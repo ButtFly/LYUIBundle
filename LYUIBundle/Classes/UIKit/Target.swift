@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Target: NSObject {
+open class Target: NSObject {
     
     public weak var target: NSObject?
     public var selector: Selector

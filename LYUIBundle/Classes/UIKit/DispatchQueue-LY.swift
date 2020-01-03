@@ -9,7 +9,7 @@ import UIKit
 
 extension DispatchQueue {
     
-    func asyncInMain(_ block: @escaping (() -> Void)) -> Void {
+    open func asyncInMain(_ block: @escaping (() -> Void)) -> Void {
         if Thread.current == Thread.main {
             block()
         } else {
@@ -19,7 +19,7 @@ extension DispatchQueue {
         }
     }
     
-    func syncInMain(_ block: @escaping (() -> Void)) -> Void {
+    open func syncInMain(_ block: @escaping (() -> Void)) -> Void {
         if Thread.current == Thread.main {
             block()
         } else {

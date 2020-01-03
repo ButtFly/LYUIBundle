@@ -10,7 +10,7 @@ import UIKit
 
 extension UIColor {
     
-    class func colorWith(intValue: Int, alpha: CGFloat = 1) -> UIColor {
+    open class func colorWith(intValue: Int, alpha: CGFloat = 1) -> UIColor {
         var cValue = intValue
         let blue = CGFloat(cValue % 256) / CGFloat(255)
         cValue >>= 8
