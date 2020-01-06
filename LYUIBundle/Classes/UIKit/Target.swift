@@ -12,7 +12,7 @@ open class Target: NSObject {
     
     public weak var target: NSObject?
     public var selector: Selector
-    init(target: NSObject, selector: Selector) {
+    public init(target: NSObject, selector: Selector) {
         self.target = target
         self.selector = selector
     }
