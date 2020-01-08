@@ -11,14 +11,38 @@ import UIKit
     
     public private(set) var contentView: UIView!
     
+    public var contentViewIndex: Int {
+        return 0
+    }
+    
+    public var nibName: String {
+        return NSStringFromClass(type(of: self)).components(separatedBy: ".").last!
+    }
+    
     open override func layoutSubviews() {
         super.layoutSubviews()
+        contentView.frame = bounds
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        initContentView()
+    }
+    
+    required public init?(coder: NSCoder) {
+        super.init(coder: coder)
+        initContentView()
+    }
+    
+    func initContentView() -> Void {
         if contentView == nil {
             let bundle = Bundle(for: type(of: self))
-            contentView = (bundle.loadNibNamed(NSStringFromClass(type(of: self)).components(separatedBy: ".").last!, owner: self, options: nil)!.first! as! UIView)
+            let nibs = bundle.loadNibNamed(nibName, owner: self, options: nil) as! [UIView]
+            contentView = nibs[contentViewIndex]
             addSubview(contentView)
         }
         contentView.frame = bounds
     }
     
 }
+

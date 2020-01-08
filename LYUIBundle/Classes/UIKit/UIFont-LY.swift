@@ -15,6 +15,14 @@ extension UIFont {
     /// <#name#>
     
     public class func pingFangSC(ofSize size: CGFloat) -> UIFont {
+        return pingFangSCRegular(ofSize: size)
+    }
+    
+    public class func pingFangSCUltralight(ofSize size: CGFloat) -> UIFont {
+        return UIFont(name: "PingFangSC-Ultralight", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    public class func pingFangSCRegular(ofSize size: CGFloat) -> UIFont {
         return UIFont(name: "PingFangSC-Regular", size: size) ?? UIFont.systemFont(ofSize: size)
     }
     
@@ -28,6 +36,10 @@ extension UIFont {
     
     public class func pingFangSCSemibold(ofSize size: CGFloat) -> UIFont {
         return UIFont(name: "PingFangSC-Semibold", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    public class func pingFangSCThin(ofSize size: CGFloat) -> UIFont {
+        return UIFont(name: "PingFangSC-Thin", size: size) ?? UIFont.systemFont(ofSize: size)
     }
     
     //MARK: - <#name#>
