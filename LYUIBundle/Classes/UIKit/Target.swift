@@ -16,5 +16,21 @@ open class Target: NSObject {
         self.target = target
         self.selector = selector
     }
+    
+    @discardableResult
+    public func doPerform() -> Unmanaged<AnyObject>? {
+        return target?.perform(selector)
+    }
+    
+    @discardableResult
+    public func doPerform(with object: Any) -> Unmanaged<AnyObject>? {
+        return target?.perform(selector, with: object)
+    }
+    
+    @discardableResult
+    public func doPerform(with object1: Any, with object2: Any) -> Unmanaged<AnyObject>? {
+        return target?.perform(selector, with: object1, with: object2)
+    }
 
 }
+
