@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension DispatchQueue {
+public enum LYRunInMain {
     
-    open func asyncInMain(_ block: @escaping (() -> Void)) -> Void {
+    public static func async(_ block: @escaping (() -> Void)) -> Void {
         if Thread.current == Thread.main {
             block()
         } else {
@@ -19,7 +19,7 @@ extension DispatchQueue {
         }
     }
     
-    open func syncInMain(_ block: @escaping (() -> Void)) -> Void {
+    public static func sync(_ block: @escaping (() -> Void)) -> Void {
         if Thread.current == Thread.main {
             block()
         } else {
