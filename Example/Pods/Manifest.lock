@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - LYUIBundle (0.6.0)
+  - LYUIBundle (0.7.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  LYUIBundle: 7614b2c8708de2c7d452bf39042b683fbc619b90
+  LYUIBundle: a7b9e124b7f21792d4970aea87500b3e4d054c28
 
 PODFILE CHECKSUM: d13608d1e653eaf063b6c232d46b1e79e9df23d8
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
