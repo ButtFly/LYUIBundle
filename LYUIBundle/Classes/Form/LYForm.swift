@@ -46,10 +46,6 @@ open class LYForm: UIView {
         sections.removeAll()
     }
     
-    public func reloadForm() -> Void {
-        table.reloadData()
-    }
-    
     public override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(table)
@@ -104,8 +100,93 @@ extension LYForm: UITableViewDelegate, UITableViewDataSource {
 
 
 
+/// 更新
+extension LYForm {
+    
+    // Reloading and Updating
+    
+    // Allows multiple insert/delete/reload/move calls to be animated simultaneously. Nestable.
+    @available(iOS 11.0, *)
+    func performBatchUpdates(_ updates: (() -> Void)?, completion: ((Bool) -> Void)? = nil) {
+        table.performBatchUpdates(updates, completion: completion)
+    }
 
-open class LYSection {
+    
+    // Use -performBatchUpdates:completion: instead of these methods, which will be deprecated in a future release.
+    func beginUpdates() {
+        table.beginUpdates()
+    }
+
+    func endUpdates() {
+        table.endUpdates()
+    }
+
+    
+    func insertSections(_ sections: IndexSet, with animation: UITableView.RowAnimation) {
+        table.insertSections(sections, with: animation)
+    }
+
+    func deleteSections(_ sections: IndexSet, with animation: UITableView.RowAnimation) {
+        table.deleteSections(sections
+            , with: animation)
+    }
+
+    @available(iOS 3.0, *)
+    func reloadSections(_ sections: IndexSet, with animation: UITableView.RowAnimation) {
+        table.reloadSections(sections, with: animation)
+    }
+
+    @available(iOS 5.0, *)
+    func moveSection(_ section: Int, toSection newSection: Int) {
+        table.moveSection(section, toSection: newSection)
+    }
+
+    
+    func insertRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation) {
+        table.insertRows(at: indexPaths, with: animation)
+    }
+
+    func deleteRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation) {
+        table.deleteRows(at: indexPaths, with: animation)
+    }
+
+    @available(iOS 3.0, *)
+    func reloadRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation) {
+        table.reloadRows(at: indexPaths, with: animation)
+    }
+
+    @available(iOS 5.0, *)
+    func moveRow(at indexPath: IndexPath, to newIndexPath: IndexPath) {
+        table.moveRow(at: indexPath, to: newIndexPath)
+    }
+
+    
+    // Returns YES if the table view is in the middle of reordering, is displaying a drop target gap, or has drop placeholders. If possible, avoid calling -reloadData while there are uncommitted updates to avoid interfering with user-initiated interactions that have not yet completed.
+    @available(iOS 11.0, *)
+    var hasUncommittedUpdates: Bool {
+        table.hasUncommittedUpdates
+    }
+
+    
+    // Reloads everything from scratch. Redisplays visible rows. Note that this will cause any existing drop placeholder rows to be removed.
+    func reloadData() {
+        table.reloadData()
+    }
+
+    
+}
+
+
+
+
+
+
+open class LYSection: Equatable {
+    
+    public static func == (lhs: LYSection, rhs: LYSection) -> Bool {
+        return lhs === rhs
+    }
+    
     fileprivate var rows = [LYRow]()
     
     open func addRow(_ row: LYRow) -> Void {
