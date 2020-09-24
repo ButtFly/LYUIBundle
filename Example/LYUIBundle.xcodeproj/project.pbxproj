@@ -211,12 +211,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = K64377832H;
+						DevelopmentTeam = DWKUG2PD45;
 						LastSwiftMigration = 1130;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = K64377832H;
+						DevelopmentTeam = DWKUG2PD45;
 						LastSwiftMigration = 1130;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -467,11 +467,11 @@
 			baseConfigurationReference = A783033B78DB82FBE091086D /* Pods-LYUIBundle_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K64377832H;
+				DEVELOPMENT_TEAM = DWKUG2PD45;
 				INFOPLIST_FILE = LYUIBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.buttfly.ly.UIBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
@@ -483,11 +483,11 @@
 			baseConfigurationReference = AAB864B7CA2A598D5C6D3408 /* Pods-LYUIBundle_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K64377832H;
+				DEVELOPMENT_TEAM = DWKUG2PD45;
 				INFOPLIST_FILE = LYUIBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.buttfly.ly.UIBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
@@ -498,7 +498,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFB9A0292EA43133EEFED97 /* Pods-LYUIBundle_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = K64377832H;
+				DEVELOPMENT_TEAM = DWKUG2PD45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -521,7 +521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBBB39AACDE55EAB230E67F8 /* Pods-LYUIBundle_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = K64377832H;
+				DEVELOPMENT_TEAM = DWKUG2PD45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

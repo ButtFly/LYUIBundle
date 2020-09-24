@@ -63,9 +63,13 @@ open class LYTarget: NSObject {
 
 open class LYAction<U> {
     
-    fileprivate weak var target: AnyObject? = nil
+    public private(set) weak var target: AnyObject? = nil
     
-    fileprivate var handleBlock: ((_ target: AnyObject, _ back: U?) -> Void)? = nil
+    public private(set) var handleBlock: ((_ target: AnyObject, _ back: U?) -> Void)? = nil
+    
+    public var isValid: Bool {
+        (self.target != nil) && (self.handleBlock != nil)
+    }
     
     public init() {}
     
