@@ -51,7 +51,7 @@ public enum L {
 
 public extension L {
     
-    public static var minLine: CGFloat {
+    static var minLine: CGFloat {
         get {
             return (screenScale == 3) ? (2 / screenScale) : (1 / screenScale)
         }
