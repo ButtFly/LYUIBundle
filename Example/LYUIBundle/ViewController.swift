@@ -9,19 +9,27 @@
 import UIKit
 import LYUIBundle
 
+enum L: LayoutNormalizationEnable {
+    static var standardWidth: CGFloat = 375
+    static var standardHeight: CGFloat = 667
+}
+
 class ViewController: UIViewController {
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        LYRunInMain.async {
-            print("哈师大三等奖")
-        }
         
-        LYRunInMain.sync {
-            print("asdkjhaksljdh")
-        }
+        let line1 = UIView()
+        line1.backgroundColor = UIColor.red
+        view.addSubview(line1)
+        line1.frame = CGRect(x: 0, y: 100, width: 300, height: 0.8)
+        
+        let line2 = UIView()
+        line2.backgroundColor = UIColor.red
+        view.addSubview(line2)
+        line2.frame = CGRect(x: 0, y: 200, width: 300, height: 1.2)
         
     }
 

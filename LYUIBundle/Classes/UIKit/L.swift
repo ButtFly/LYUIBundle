@@ -9,52 +9,71 @@
 import UIKit
 
 
-/// 布局的归一化
-public enum L {
+/// 抽象归一化能力
+public protocol LayoutNormalizationEnable {
     
-    public static let screenWidth = UIScreen.main.bounds.width
-    public static let screenHeight = UIScreen.main.bounds.height
-    public static let screenScale = UIScreen.main.scale
+    /// 标准的屏幕宽度
+    static var standardWidth: CGFloat {get}
     
+    /// 标准的屏幕高度
+    static var standardHeight: CGFloat {get}
     
-    public static func x(_ x: CGFloat, standardWidth: CGFloat = 375) -> CGFloat {
-        var v = (screenWidth / standardWidth * x) * screenScale
-        v = round(v)
-        return v / screenScale
-    }
+    /// 在当前设备中，最细的线条宽度
+    static var minLine: CGFloat {get}
     
+    /// 以设计图宽度为标准返回合适的值
+    /// - Parameter x: <#x description#>
+    static func x(_ x: CGFloat) -> CGFloat
     
-    public static func x(_ x: Int, standardWidth: CGFloat = 375) -> CGFloat {
-        var v = (screenWidth / standardWidth * CGFloat(x)) * screenScale
-        v = round(v)
-        return v / screenScale
-    }
+    /// 以设计图高度为标准返回合适的值
+    /// - Parameter y: <#y description#>
+    static func y(_ y: CGFloat) -> CGFloat
     
-    public static func y(_ y: CGFloat, standardHeight: CGFloat = 667) -> CGFloat {
-        var v = (screenHeight / standardHeight * y) * screenScale
-        v = round(v)
-        return v / screenScale
-    }
+    /// 返回适合当前屏幕布局的最合适的值
+    /// - Parameter v: <#v description#>
+    static func solid(_ v: CGFloat) -> CGFloat
     
-    public static func y(_ y: Int, standardHeight: CGFloat = 667) -> CGFloat {
-        var v = (screenHeight / standardHeight * CGFloat(y)) * screenScale
-        v = round(v)
-        return v / screenScale
-    }
+    static func solidCeil(_ v: CGFloat) -> CGFloat
     
-    public static func solid(_ x: CGFloat) -> CGFloat {
-        ceil(x * screenScale) / screenScale
-    }
-    
+    static func solidFloor(_ v: CGFloat) -> CGFloat
 }
 
-
-public extension L {
+public extension LayoutNormalizationEnable {
+    private static var screenScale: CGFloat {
+        UIScreen.main.scale
+    }
+    
+    private static var screenWidth: CGFloat {
+        UIScreen.main.bounds.size.width
+    }
+    
+    private static var screenHeight: CGFloat {
+        UIScreen.main.bounds.size.height
+    }
+    
+    static func x(_ x: CGFloat) -> CGFloat {
+        return (screenWidth / standardWidth * x)
+    }
+    
+    static func y(_ y: CGFloat) -> CGFloat {
+        return (screenHeight / standardHeight * y)
+    }
+    
+    static func solidCeil(_ v: CGFloat) -> CGFloat {
+        ceil(v * screenScale) / screenScale
+    }
+    
+    static func solid(_ v: CGFloat) -> CGFloat {
+        round(v * screenScale) / screenScale
+    }
+    
+    static func solidFloor(_ v: CGFloat) -> CGFloat {
+        floor(v * screenScale) / screenScale
+    }
     
     static var minLine: CGFloat {
         get {
             return (screenScale == 3) ? (2 / screenScale) : (1 / screenScale)
         }
     }
-    
 }
